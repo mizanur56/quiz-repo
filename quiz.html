@@ -5,19 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz Test</title>
     <link rel="stylesheet" href="quiz.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h2></h2>
-    <div class="quiz-one">
-      <h2 id="question">Inside which HTML element do we put the JavaScript?</h2>
-      <div class="answer-options">
-        <input type="button" value="<script>" />
-        <input type="button" value="<javascript>" />
-        <input type="button" value="<scripting>" />
-        <input type="button" value="<js>" />
+    <section class="myQuizApp">
+      <div class="img">
+        <img src="images/Question 1.png" alt="" />
       </div>
-      <button id="nextbtn" type="submit">Next</button>
-    </div>
-    <script src="quiz.js"></script>
+      <div class="text">
+        <h2>Quiz App With Fixed Time</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sequi
+          vitae, voluptatum delectus ullam in? Veritatis tenetur inventore
+          dignissimos quaerat ipsa, officiis praesentium, voluptate aspernatur
+          distinctio iusto aliquam enim ex.
+        </p>
+      </div>
+      <div class="myButton">
+        <button class="btn">Start Quiz</button>
+      </div>
+    </section>
+
+    <section class="rule-box">
+      <h2>Some Rules of this Quiz</h2>
+      <div class="rule-text">
+        <p>1. You will have only 15 seconds per each question.</p>
+        <p>2. Once you select your answer, it can't be undone.</p>
+        <p>3. You can't select any option once time goes off.</p>
+        <p>4. You can't exit from the Quiz while you're playing.</p>
+        <p>5. You'll get points on the basis of your correct answers.</p>
+      </div>
+      <div class="ruleBoxBtn">
+        <button class="btn">Exit Quiz</button>
+        <button class="btn">Continue</button>
+      </div>
+    </section>
+
+    <section class="questionPart">
+      <div class="header">
+        <h3 class="title">Start Exam</h3>
+        <div class="timer">
+          <p id="time">Time Off</p>
+          <p id="second">00</p>
+        </div>
+        <div class="timeLine"></div>
+      </div>
+      <div class="questionOption">
+        <h2>What does HTML Stand For?</h2>
+        <div class="option">
+          <p>Hyper Text Preprocessor</p>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="option">
+          <p>Hyper Text Markup Language</p>
+          <i class="fa-solid fa-check"></i>
+        </div>
+        <div class="option">
+          <p>Hyper Text Multi Language</p>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <div class="option">
+          <p>Hyper Tool Multi Language</p>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+      <div class="footer">
+        <p>1 of 5 Question</p>
+        <button class="btn">Next One</button>
+      </div>
+    </section>
   </body>
 </html>
