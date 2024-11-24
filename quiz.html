@@ -29,9 +29,9 @@
       </div>
     </section>
 
-    <section class="rule-box">
+    <section class="ruleBox">
       <h2>Some Rules of this Quiz</h2>
-      <div class="rule-text">
+      <div class="ruleText">
         <p>1. You will have only 15 seconds per each question.</p>
         <p>2. Once you select your answer, it can't be undone.</p>
         <p>3. You can't select any option once time goes off.</p>
@@ -39,8 +39,8 @@
         <p>5. You'll get points on the basis of your correct answers.</p>
       </div>
       <div class="ruleBoxBtn">
-        <button class="btn">Exit Quiz</button>
-        <button class="btn">Continue</button>
+        <button id="btn1" class="btn">Exit Quiz</button>
+        <button id="btn2" class="btn">Continue</button>
       </div>
     </section>
 
@@ -54,28 +54,23 @@
         <div class="timeLine"></div>
       </div>
       <div class="questionOption">
-        <h2>What does HTML Stand For?</h2>
-        <div class="option">
-          <p>Hyper Text Preprocessor</p>
-          <i class="fa-solid fa-xmark"></i>
+        <div class="quesTitle">
+          <!-- <h2>What does HTML Stand For?</h2> -->
         </div>
-        <div class="option">
-          <p>Hyper Text Markup Language</p>
-          <i class="fa-solid fa-check"></i>
-        </div>
-        <div class="option">
-          <p>Hyper Text Multi Language</p>
-          <i class="fa-solid fa-xmark"></i>
-        </div>
-        <div class="option">
-          <p>Hyper Tool Multi Language</p>
-          <i class="fa-solid fa-xmark"></i>
+
+        <div class="myOptions">
+          <div class="option"></div>
         </div>
       </div>
       <div class="footer">
-        <p>1 of 5 Question</p>
-        <button class="btn">Next One</button>
+        <div class="totalQuestion">
+          <!-- <p>1 of 5 Question</p> -->
+        </div>
+        <button id="nextBtn" class="btn">Next One</button>
       </div>
     </section>
+
+    <script src="quiz.js"></script>
+    <script src="question.js"></script>
   </body>
 </html>

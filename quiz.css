@@ -53,27 +53,36 @@ body {
   font-size: 15px;
   border-radius: 50% 0;
   transition: 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .btn:hover {
   background-color: rgb(21, 161, 114);
 }
+.ruleBox.activeInfo {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  position: relative;
+}
 
-.rule-box {
+.ruleBox {
   background-color: aquamarine;
-  padding: ;
+  position: absolute;
   width: 350px;
   height: 455px;
   box-shadow: rgb(0 0 0/10%) 0px 10px 50px;
   border-radius: 10px 10px 30px 10px;
+  opacity: 0;
+  pointer-events: none;
 }
 
-.rule-box h2 {
+.ruleBox h2 {
   font-family: "Times New Roman", Times, serif;
   padding: 20px;
   border-bottom: 1px solid;
 }
-.rule-text {
+.ruleText {
   padding: 20px;
   line-height: 30px;
 }
@@ -82,6 +91,13 @@ body {
   justify-content: space-between;
 }
 /* question part */
+.questionPart.activeQuestion {
+  opacity: 1;
+  z-index: 5;
+  pointer-events: auto;
+  position: relative;
+}
+
 .questionPart {
   background-color: rgba(199, 224, 10, 0.52);
   width: 350px;
@@ -89,6 +105,9 @@ body {
   box-shadow: rgb(0 0 0/10%) 0px 10px 50px;
   border-radius: 10px 10px 30px 10px;
   padding: 30px;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
 }
 .header {
   padding-bottom: 10px;
@@ -141,6 +160,12 @@ body {
   padding: 20px 10px;
   font-size: 17px;
   margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.option:hover {
+  background-color: rgb(167, 215, 215);
+  cursor: pointer;
 }
 
 .footer {
